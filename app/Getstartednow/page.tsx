@@ -68,7 +68,7 @@ export default function GetStartedPage() {
               />
             </div>
             <h2 className="text-2xl font-bold tracking-widest border-b-2 border-white/30 pb-1 px-4">
-              Home
+             <a href="/Home">Home</a> 
             </h2>
           </div>
 
