@@ -9,7 +9,7 @@ export default function Header() {
   const [activeLink, setActiveLink] = useState('HOME');
 
   const navLinks = [
-    { name: 'HOME', href: '/' },
+    { name: 'HOME', href: '/Home' },
     { name: 'About Us', href: '/about' },
     { name: 'News', href: '/news' },
     { name: 'Categories', href: '/categories' },
