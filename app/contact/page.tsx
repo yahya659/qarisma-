@@ -21,18 +21,7 @@ export default function TruthSection() {
           />
         </div>
 
-        {/* 2. الفراشات الجانبية كما تظهر في الفيجما */}
-        <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 z-20 pointer-events-none flex flex-col gap-4">
-          <span className="text-5xl md:text-7xl opacity-80 rotate-12 drop-shadow-lg">
-            🦋
-          </span>
-          <span className="text-3xl md:text-5xl opacity-60 -rotate-12 translate-x-8">
-            🦋
-          </span>
-          <span className="text-4xl md:text-6xl opacity-70 rotate-45 -translate-x-4">
-            🦋
-          </span>
-        </div>
+       
 
         {/* 3. المحتوى النصي بتنسيق الفيجما */}
         <div className="relative z-30 max-w-4xl flex flex-col text-left">
