@@ -115,6 +115,7 @@ export default function NewsSection() {
         </div>
         
       </section>
+      
     <Footer/>
     </>
   );

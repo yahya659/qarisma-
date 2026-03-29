@@ -45,41 +45,64 @@ export default function WhoWeAre() {
       </section>
 
       {/* 2. قسم القصة - Our Story Section */}
-      <section className="w-full py-16 px-4 md:px-10 bg-white">
-        <div className="relative max-w-7xl mx-auto min-h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="/images/f.png"
-              alt="Newspaper Background"
-              className="w-full h-full object-cover opacity-30 mix-blend-overlay grayscale"
+    <section className="relative w-full py-20 px-6 md:px-12 lg:px-20 bg-[#f4eef0]">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* الحاوية الرئيسية بستايل الـ Rounded Card كما في الصورة */}
+        <div className="relative w-full min-h-[500px] rounded-[40px] overflow-hidden shadow-2xl">
+          
+          {/* خلفية الجرائد مع التغبيش اللوني */}
+          <div className="absolute inset-0">
+            <img 
+              src="images/f.png" 
+              className="w-full h-full object-cover opacity-80 scale-105" 
+              alt="Our Story Background"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#312E81] via-[#312E81]/80 to-transparent" />
+            {/* طبقة لونية دافئة (Overlay) لتعزيز القراءة */}
+            <div className="absolute inset-0 bg-gradient-to-r from-[#2d1b2e]/40 to-transparent"></div>
           </div>
 
-          <div className="relative z-10 p-8 md:p-16 flex flex-col gap-6 max-w-4xl h-full justify-center">
-            <div className="inline-block self-start px-8 py-2 bg-[#6366F1] text-white text-xl md:text-2xl font-bold rounded-2xl shadow-lg">
-              Our story
+          {/* المحتوى النصي */}
+          <div className="relative z-10 h-full flex flex-col justify-center p-8 md:p-16 lg:p-20 max-w-2xl">
+            
+            {/* Badge: Our Story */}
+            <div className="inline-block mb-6">
+              <span className="bg-[#5c56d6] text-white text-xs md:text-sm font-black uppercase tracking-[0.3em] px-6 py-3 rounded-xl shadow-lg shadow-[#5c56d6]/20">
+                Our story
+              </span>
             </div>
-            <h1 className="text-4xl md:text-[52px] font-black text-black leading-tight drop-shadow-sm max-w-[800px]">
+
+            {/* العنوان الرئيسي */}
+            <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-[#1a1625] mb-6 leading-tight tracking-tighter">
               Beyond the Headlines
-            </h1>
-            <p className="text-white text-xl md:text-[28px] font-bold leading-relaxed max-w-[850px]">
-              It has one principle and one motto that can be read individually,
-              meaning each word on its own, or as a whole, we believe that
-              reality and maturity are core for truth
+            </h2>
+
+            {/* الوصف */}
+            <p className="text-[#1a1625] text-lg md:text-xl font-medium leading-relaxed mb-10 drop-shadow-sm">
+              It has one principle and one motto that can be read individually, 
+              meaning each word on its own, or as a whole, we believe that 
+              <span className="font-black text-[#5c56d6]"> reality and maturity are core for truth.</span>
             </p>
-            <div className="flex flex-col sm:flex-row gap-5 mt-6">
-              <button className="px-14 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xl font-bold rounded-2xl hover:bg-white/20 transition-all shadow-lg min-w-[220px]">
+
+            {/* مجموعة الأزرار (Buttons Group) */}
+            <div className="flex flex-wrap gap-4">
+              <button className="px-10 py-4 bg-white/20 backdrop-blur-md border border-black/10 text-black font-black uppercase tracking-widest text-xs rounded-2xl hover:bg-white hover:shadow-xl transition-all duration-300">
                 Learn More
               </button>
-              <button className="px-14 py-4 bg-[#6366F1] text-white text-xl font-bold rounded-2xl hover:bg-[#4F46E5] transition-all shadow-xl min-w-[220px]">
+              
+              <button className="px-10 py-4 bg-[#5c56d6] text-white font-black uppercase tracking-widest text-xs rounded-2xl shadow-lg shadow-[#5c56d6]/30 hover:shadow-[#5c56d6]/50 hover:-translate-y-1 transition-all duration-300">
                 Latest News
               </button>
             </div>
           </div>
-        </div>
-      </section>
 
+          {/* لمسة فنية: فراشة صغيرة في الزاوية */}
+          <div className="absolute bottom-10 right-10 w-32 h-32 opacity-20 pointer-events-none rotate-12">
+             <img src='images/flower.png' className="w-full h-full object-contain" />
+          </div>
+        </div>
+      </div>
+    </section>
       {/* 3. قسم الأخبار - Our News Slider Section */}
       <section className="relative w-full py-16 px-6 md:px-24 bg-[#EBC4D2]/20 overflow-hidden">
         <div className="absolute inset-0 -z-10">
@@ -201,7 +224,6 @@ export default function WhoWeAre() {
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );
