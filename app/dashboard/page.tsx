@@ -11,6 +11,7 @@ export default function DashboardLayout(){
       {/* 1. القائمة الجانبية ثابتة (مع تأثير الشفافية على الخلفية الجديدة) */}
       <aside className="h-full w-64 fixed inset-y-0 z-50">
         <Sidebar />
+        
       </aside>
 
       {/* 2. محتوى الصفحة المتغير (Padding لإزاحته عن الـ Sidebar)
