@@ -91,6 +91,7 @@ export default function OurTeam() {
   });
 
   return (
+    
     <div className="relative min-h-screen w-full overflow-hidden">
       
       <div 

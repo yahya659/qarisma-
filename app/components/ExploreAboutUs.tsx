@@ -16,11 +16,7 @@ export default function ExploreAboutUs() {
           Explore more about us!
         </h1>
 
-        {/* الحل هنا: 
-          1. استخدام `w-full` مع `justify-center` للتوسط.
-          2. استخدام `overflow-visible` لضمان عدم قص الظلال أو الأطراف.
-          3. أحجام ثابتة لكل دائرة لضمان عدم انضغاطها.
-        */}
+     
         <div className="w-full flex items-center justify-center gap-2 md:gap-6 lg:gap-10 px-10">
           
           {/* الدائرة 1: users */}
