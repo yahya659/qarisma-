@@ -62,14 +62,18 @@ const ArtPortal = () => {
                 Scoop
               </button>
             </Link>
+            <Link href="/art_pg_main/Talents">
+              {" "}
+              <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
+                Talents
+              </button>
+            </Link>
 
-            <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
-              Talents
-            </button>
-            <Link href="/art_pg_main/TeamofTheWeek"><button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md text-sm">
-              Team of The Week
-            </button></Link>
-            
+            <Link href="/art_pg_main/TeamofTheWeek">
+              <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md text-sm">
+                Team of The Week
+              </button>
+            </Link>
           </div>
         </header>
 
