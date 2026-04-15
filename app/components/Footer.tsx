@@ -13,6 +13,7 @@ import { RiTwitterXFill } from 'react-icons/ri';
 
 export default function Footer() {
   return (
+  
     <footer className="w-full bg-[#B89DA9] pt-12 pb-6 px-6 md:px-20 font-sans">
       <div className="max-w-7xl mx-auto">
         
