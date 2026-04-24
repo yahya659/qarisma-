@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <section className="relative w-full h-[600px] overflow-hidden flex items-center">
+    <section className="relative w-full h-[100vh] overflow-hidden flex items-center">
       {/* Background Overlay with Gradient and Shape */}
       <div className="absolute inset-0 z-0">
         <img

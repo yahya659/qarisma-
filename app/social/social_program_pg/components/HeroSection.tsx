@@ -1,7 +1,7 @@
 export default function HeroSection(){
     return(
             <header className="relative w-full h-[100vh] overflow-hidden ">
-        <div className="relative h-[500px]  md:h-[650px] flex items-center justify-center ">
+        <div className="relative h-[100vh]   flex items-center justify-center ">
           {/* Main Background Image */}
           <img 
             src="/images/social/freepik1.jpg" 
