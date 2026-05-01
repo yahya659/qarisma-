@@ -14,37 +14,42 @@ import { RiTwitterXFill } from 'react-icons/ri';
 export default function Footer() {
   return (
   
-    <footer className="w-full max-w-[1688px] h-[377px] mx-auto bg-[#BD9FA9] pt-12 pb-6 px-6 md:px-20 font-sans shadow-[0px_4px_4px_0px_#00000040]">
-  <div className="max-w-7xl mx-auto">
-    
-    {/* الجزء العلوي */}
-    <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
-      
-      {/* الروابط */}
-      <div className="grid grid-cols-2 gap-x-16 gap-y-4">
+  <footer className="w-full bg-[#BD9FA9] font-sans shadow-[0px_4px_4px_0px_#00000040]">
+
+  <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12">
+
+    {/* Top section */}
+    <div className="flex flex-col md:flex-row justify-between gap-10">
+
+      {/* Links */}
+      <div className="grid grid-cols-2 gap-x-10 md:gap-x-16 gap-y-4">
+
         <div className="flex flex-col gap-3">
-          <Link href="/news" className="text-white text-xl hover:text-gray-200 transition-colors">News</Link>
-          <Link href="/feedback" className="text-white text-xl hover:text-gray-200 transition-colors">Feed Back</Link>
-          <Link href="/about" className="text-white text-xl hover:text-gray-200 transition-colors">About Us</Link>
+          <Link href="/news" className="text-white text-base md:text-xl hover:text-gray-200 transition">News</Link>
+          <Link href="/feedback" className="text-white text-base md:text-xl hover:text-gray-200 transition">Feed Back</Link>
+          <Link href="/about" className="text-white text-base md:text-xl hover:text-gray-200 transition">About Us</Link>
         </div>
+
         <div className="flex flex-col gap-3">
-          <Link href="/fields" className="text-white text-xl hover:text-gray-200 transition-colors">fields</Link>
-          <Link href="/support" className="text-white text-xl hover:text-gray-200 transition-colors">Support</Link>
-          <Link href="/upload" className="text-white text-xl hover:text-gray-200 transition-colors">Upload</Link>
+          <Link href="/fields" className="text-white text-base md:text-xl hover:text-gray-200 transition">Fields</Link>
+          <Link href="/support" className="text-white text-base md:text-xl hover:text-gray-200 transition">Support</Link>
+          <Link href="/upload" className="text-white text-base md:text-xl hover:text-gray-200 transition">Upload</Link>
         </div>
+
       </div>
 
-      {/* الشعار + السوشيال */}
+      {/* Logo + Social */}
       <div className="flex flex-col items-center gap-6">
-        <div className="relative w-28 h-28 rounded-full overflow-hidden border-2 border-white/30 shadow-lg">
-          <img 
+
+        <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border border-white/30 shadow-lg">
+          <img
             src="/images/logo.png"
-            alt="Logo" 
+            alt="Logo"
             className="w-full h-full object-cover"
           />
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex flex-wrap justify-center gap-3 md:gap-4">
           <SocialButton color="bg-[#4267B2]" icon={<FaFacebookF />} />
           <SocialButton color="bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7]" icon={<FaInstagram />} />
           <SocialButton color="bg-black" icon={<RiTwitterXFill />} />
@@ -52,38 +57,45 @@ export default function Footer() {
           <SocialButton color="bg-[#FF0000]" icon={<FaYoutube />} />
           <SocialButton color="bg-[#0088cc]" icon={<FaTelegramPlane />} />
         </div>
+
       </div>
 
-      {/* المتاجر */}
-      <div className="flex flex-col gap-4">
-        <Link href="#" className="transform hover:scale-105 transition-transform">
-          <Image 
-            src="/google-play.png" 
-            alt="Google Play" 
-            width={170} 
-            height={50} 
+      {/* Store buttons */}
+      <div className="flex flex-col gap-4 items-center md:items-start">
+
+        <Link href="#" className="hover:scale-105 transition">
+          <Image
+            src="/google-play.png"
+            alt="Google Play"
+            width={160}
+            height={50}
             className="rounded-lg shadow-md"
           />
         </Link>
 
-        <Link href="#" className="transform hover:scale-105 transition-transform">
-          <Image 
-            src="/app-store.png" 
-            alt="App Store" 
-            width={170} 
-            height={50} 
+        <Link href="#" className="hover:scale-105 transition">
+          <Image
+            src="/app-store.png"
+            alt="App Store"
+            width={160}
+            height={50}
             className="rounded-lg shadow-md"
           />
         </Link>
+
       </div>
+
     </div>
 
-    {/* الحقوق */}
-    <div className="mt-12 pt-6 border-t border-white/20 text-center">
-      <p className="text-black text-lg font-semibold tracking-wide">
+    {/* Bottom */}
+    <div className="mt-10 pt-6 border-t border-white/20 text-center">
+
+      <p className="text-black text-sm md:text-lg font-semibold tracking-wide">
         All Copy Rights are Reserved
       </p>
+
     </div>
+
   </div>
 </footer>
   );
