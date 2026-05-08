@@ -17,55 +17,84 @@ const linkClass = (path: Path) => {
 };
 
   return (
-    <>
-      <Header />
-      <br />
-      <br />
-      <br />
-      <br />
+<>
+  <Header />
 
-      <div className="top-0 left-0 h-screen w-64 
-       bg-[#5D5FEF80] from-purple-500/40 to-blue-500/40 
-        backdrop-blur-xl shadow-xl border-r border-white/20 p-4">
+  <aside
+    className="
+      fixed
+      top-[80px] md:top-[90px]
+      left-0
+      z-40
+      h-[calc(100vh-80px)] md:h-[calc(100vh-90px)]
+      w-[70px] sm:w-[220px] md:w-[250px] lg:w-[280px]
+      bg-[#5D5FEF80]
+      backdrop-blur-md
+      border-r border-white/20
+      p-2 sm:p-4 md:p-6
+      overflow-y-auto
+      transition-all
+    "
+  >
 
-        {/* Profile */}
-        <div className="flex items-center gap-3 mb-6">
-          <img
-            src="/images/profile-placeholder.jpg"
-            className="w-10 h-10 rounded-full"
-          />
-          <span className="text-white font-semibold">Sophia Carter</span>
-        </div>
+    {/* Profile */}
+    <div className="flex items-center justify-center sm:justify-start gap-3 mb-6">
 
-        {/* Menu */}
-        <nav className="flex flex-col gap-3">
+      <img
+        src="/images/profile-placeholder.jpg"
+        className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
+        alt="profile"
+      />
 
-          <Link href="/dashboard/Homecontact" className={linkClass("/dashboard/Homecontact")}>
-            Home
-          </Link>
+      <span className="hidden sm:block text-white text-sm md:text-base font-semibold">
+        Sophia Carter
+      </span>
 
-          <Link href="/dashboard/Explore" className={linkClass("/dashboard/Explore")}>
-            Explore
-          </Link>
+    </div>
 
-          <Link href="/dashboard/Bookmarks" className={linkClass("/dashboard/Bookmarks")}>
-            Bookmarks
-          </Link>
 
-          <Link href="/dashboard/History" className={linkClass("/dashboard/History")}>
-            History
-          </Link>
+    {/* Menu */}
+    <nav className="flex flex-col gap-2 md:gap-3">
 
-          <Link href="/dashboard/Feedback" className={linkClass("/dashboard/Feedback")}>
-            Feedback
-          </Link>
+      <Link
+        href="/dashboard/Homecontact"
+        className={linkClass("/dashboard/Homecontact")}
+      >
+        Home
+      </Link>
 
-        </nav>
-        
-        
-      </div>
-      
-    </>
+      <Link
+        href="/dashboard/Explore"
+        className={linkClass("/dashboard/Explore")}
+      >
+        Explore
+      </Link>
+
+      <Link
+        href="/dashboard/Bookmarks"
+        className={linkClass("/dashboard/Bookmarks")}
+      >
+        Bookmarks
+      </Link>
+
+      <Link
+        href="/dashboard/History"
+        className={linkClass("/dashboard/History")}
+      >
+        History
+      </Link>
+
+      <Link
+        href="/dashboard/Feedback"
+        className={linkClass("/dashboard/Feedback")}
+      >
+        Feedback
+      </Link>
+
+    </nav>
+
+  </aside>
+</>
     
   );
 }

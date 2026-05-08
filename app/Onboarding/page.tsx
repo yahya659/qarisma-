@@ -26,11 +26,11 @@ export default function GetStartedPage() {
 
         {/* 🦋 Butterfly Background (Soft) */}
         <Image
-          src="/butterflybackground.png"
-          alt="butterflies"
-          fill
-          className="object-cover opacity-35"
-        />
+                src="/images/launch_page/launch_page2.png"
+                alt="butterflies"
+                fill
+                className="object-cover opacity-20 shadow-[6px_8px_4px_0px_#5D5FEF]"
+              />
 
         {/* 🌫 Card Overlay */}
 
@@ -65,7 +65,8 @@ export default function GetStartedPage() {
                 h-12
                 rounded-[15px]
                 bg-[#FDEBF4]
-                text-purple-700
+                text-[#5D5FEF]
+                text-[24px]
                 font-medium
                 hover:scale-105
                 transition-all
@@ -84,6 +85,7 @@ export default function GetStartedPage() {
                 rounded-[15px]
                 bg-[#FDEBF4]/40
                 text-gray-800
+                text-[24px]
                 shadow-[5px_4px_4px_rgba(0,0,0,0.4)]
                 hover:scale-105
                 transition-all

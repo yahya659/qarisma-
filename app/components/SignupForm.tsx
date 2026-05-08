@@ -188,7 +188,7 @@ export default function SignupForm() {
 
         <p className="text-center text-[10px] text-gray-400 mt-6">
           Already have an account?{" "}
-          <span className="text-blue-600 font-bold underline cursor-pointer">
+          <span className="text-[#5D5FEF] font-bold underline cursor-pointer">
             Log In
           </span>
         </p>

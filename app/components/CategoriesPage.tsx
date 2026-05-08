@@ -10,7 +10,7 @@ export default function CategoriesPage() {
   const categories = [
     { name: 'Art', color: 'bg-[#E67EAF]', path: '/art_pg_main' },
     { name: 'fashion', color: 'bg-[#6366F1]', path: '/Fashion' },
-    { name: 'Sports', color: 'bg-[#6366F1]', path: '/sports' },
+    { name: 'Sports', color: 'bg-[#6366F1]', path: '/Sporte' },
     { name: 'Nature', color: 'bg-[#6366F1]', path: '/nature' },
     { name: 'Child', color: 'bg-[#6366F1]', path: '/child' },
     { name: 'Social', color: 'bg-[#6366F1]', path: '/social' },

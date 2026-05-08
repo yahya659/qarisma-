@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Onboarding from "../app/Onboarding/page";
+import Launch_page from "../app/launch_page/page";
 export default function Home() {
   return (
     <>
-      <Onboarding />
+      <Launch_page/>
     </>
   );
 }

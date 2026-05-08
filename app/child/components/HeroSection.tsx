@@ -16,7 +16,7 @@ export default function HeroSection() {
       }}
     />
 
-    <div className="absolute inset-0 bg-gradient-to-r from-[#F178B6]/40 via-[#F178B6]/40 to-transparent z-10" />
+    <div className="absolute inset-0 bg-gradient-to-r from-[#F178B6]/40  via-[#F178B6]/40 to-transparent z-10" />
 
     <div className="absolute top-[-10%] right-[-10%] w-[70%] h-[120%] bg-[#F178B6]/40 blur-[120px] rounded-full opacity-60 z-10" />
   </div>

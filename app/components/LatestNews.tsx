@@ -9,7 +9,7 @@ export default function LatestNews() {
       
       {/* العنوان العلوي ورابط المشاهدة */}
       <div className="max-w-7xl mx-auto flex justify-between items-end mb-12">
-        <h2 className="text-6xl md:text-8xl font-bold text-[#7E5BEF] tracking-tight">
+        <h2 className="text-[64px]  font-bold text-[#7E5BEF] tracking-tight">
           Latest News
         </h2>
         <Link href="/all-news" className="text-[#7E5BEF] text-xl font-bold flex items-center hover:underline pb-4">
