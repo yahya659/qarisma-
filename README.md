@@ -37,7 +37,6 @@
 ![Article Page](/public/images/image_project/sinnn.png)
 ![Article Page](/public/images/image_project/face2.png)
 
-> يمكنك استبدال هذه الصور باللقطات الفعلية لموقعك في مجلد `public/screenshots/`.
 
 ---
 
