@@ -10,8 +10,13 @@ const LatestStoriesPage = () => {
     <br/>
     <br/>
     <br/>
-    <div className="relative min-h-screen bg-[#C4B5FD]/80 text-white font-sans p-4 md:p-8 overflow-x-hidden">
-      
+    <div className="relative min-h-screen bg-[#BD9FA9]/80 text-white font-sans p-4 md:p-8 overflow-x-hidden">
+       <div
+      className="absolute inset-0 bg-cover bg-center opacity-100 -z-10"
+      style={{
+        backgroundImage: "url('/images/social/macaws1.png')",
+      }}
+    />
       {/* 1. Header Section */}
       <header className="max-w-7xl mx-auto mb-10">
         <h1 className="text-5xl font-extrabold text-[#4F46E5] mb-2 tracking-tight">Latest stories</h1>
@@ -36,7 +41,7 @@ const LatestStoriesPage = () => {
       <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
         
         {/* Featured Video (الإطار الذهبي) */}
-        <div className="lg:col-span-2 relative aspect-video rounded-xl overflow-hidden border-[6px] border-yellow-600/60 shadow-2xl bg-black">
+        <div className="lg:col-span-2 relative aspect-video  overflow-hidden shadow-2xl bg-black">
           {/* الصورة الداخلية */}
           <img 
             src="/images/NEWSS.jpg" 

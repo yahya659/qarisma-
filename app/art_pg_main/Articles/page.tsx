@@ -17,7 +17,7 @@ const ArtHeader = () => {
         />
 
         {/* طبقة التراكب البنفسجية المتدرجة كما في الصورة */}
-        <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#93C5FD]/90 via-[#C4B5FD]/95 to-[#E9D5FF]/90" />
+        <div className="absolute inset-0 z-[-1] bg-gradient-to-br from-[#93C5FD]/90  via-[#C4B5FD]/95 to-[#E9D5FF]/90" />
 
         {/* --------------------------------------------------------- */}
         {/* 2. محتوى النص */}
@@ -46,13 +46,18 @@ const ArtHeader = () => {
                   Top
                 </button>
               </Link>
+              <a href="Articles/art_articles_artists_pg">
+                <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
+                  Artists
+                </button>
+              </a>
+              <a href="/art_pg_main/Articles/art_articles_gallery_pg">
+                {" "}
+                <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
+                  Galleries
+                </button>
+              </a>
 
-              <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
-                Artists
-              </button>
-              <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
-                Galleries
-              </button>
               <button className="bg-[#6366F1] px-6 py-2 rounded-md shadow-md">
                 Feativalsls
               </button>
@@ -250,7 +255,7 @@ const ArtHeader = () => {
               <div className="flex w-full h-full items-center gap-12">
                 {/* 5. القسم الأيسر (الصورة المنحنية) */}
                 {/* نستخدم حاوية إضافية للتحكم بالحواف المنحنية والظل */}
-                <div className="flex-none w-[480px] h-[520px] rounded-[50px] overflow-hidden shadow-[0_0_30px_rgba(100,0,100,0.3)]">
+                <div className="flex-none w-[480px] h-[520px] overflow-hidden shadow-[0_0_30px_rgba(100,0,100,0.3)]">
                   <div className="relative w-full h-full">
                     <img
                       src="/images/neewss3.png" // نستخدم نفس صورة الخلفية كمثال، أو يمكنك وضع أي صورة تريدها هنا
@@ -273,7 +278,7 @@ const ArtHeader = () => {
                       It has one principle and one motto that can be read
                       individually, meaning each word on its own, or as a whole,
                       in a single sentence, whether from right to left or left
-                      to right:  (Elegance, Personality, Strength){" "}
+                      to right: (Elegance, Personality, Strength){" "}
                     </p>
                   </div>
                 </div>

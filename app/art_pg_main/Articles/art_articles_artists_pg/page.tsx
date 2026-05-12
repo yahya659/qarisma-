@@ -1,0 +1,40 @@
+import React from "react";
+import HeroSection from "./components/HeroSection";
+import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
+import Vision_Of_Latest_stories from "./components/Vision_Of_Latest_stories";
+import Latest_Articles from "./components/Latest_Articles";
+
+export default function art_articles_artists_pg() {
+  return (
+    <>
+      {" "}
+      <Header />
+      <br />
+      <br />
+      <br />
+      <br />
+      <div className="relative min-h-screen font-sans text-white selection:bg-[#5D5FEF6E]">
+        {/* Background Gradient (في الخلف) */}
+        <div className="fixed inset-0 -z-10 bg-[linear-gradient(270deg,#5D5FEF_-5.47%,#F178B6_100%)]" />
+        {/* Hero Section */}
+       
+
+        {/* Discover Section */}
+        <div className="relative w-full">
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-10 -z-10"
+            style={{
+              backgroundImage: "url('/images/social/macaws1.png')",
+            }}
+          />
+           <HeroSection />
+          <Vision_Of_Latest_stories />
+          <Latest_Articles/>
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+}

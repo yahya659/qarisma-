@@ -82,7 +82,7 @@ const ArtPortal = () => {
 
         <main className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Featured Video Card */}
-          <div className="lg:col-span-2 relative group overflow-hidden rounded-xl border-4 border-yellow-600/50 shadow-2xl">
+          <div className="lg:col-span-2 relative group overflow-hidden   shadow-2xl">
             <div className="aspect-video bg-black/40 relative flex items-center justify-center">
               {/* Background Image Placeholder */}
               <div className="absolute inset-0 bg-[url('/images/NEWSS.jpg')] bg-cover bg-center mix-blend-overlay"></div>
@@ -160,7 +160,7 @@ const SidebarCard = ({ title, active }) => (
     className={`mb-3 p-4 rounded-lg backdrop-blur-md transition 
 ${active ? "bg-[#F178B6] border-l-4 border-blue-500" : "bg-[]/70 hover:bg-[#F178B6]"}`}
   >
-    <h4 className="font-bold text-blue-900">{title}</h4>
+    <h4 className="font-bold bg- text-blue-900">{title}</h4>
     <p className="text-[10px] text-gray-700 mt-1 line-clamp-2">
       It has one principle and one motto that can be read individually...
     </p>
@@ -172,7 +172,7 @@ const ArticleCard = ({ title, highlight }) => (
     <div className="h-40 bg-gray-300 relative overflow-hidden">
       {/* Image Placeholder */}
       <div className="absolute inset-0 bg-[url('/images/news1.png')] bg-cover bg-center group-hover:scale-105 transition-transform duration-500"></div>
-      <div className="absolute bottom-0 left-0 bg-white/80 px-4 py-1 font-bold text-gray-800 rounded-tr-xl">
+      <div className="absolute bottom-0 text-[32px] left-0 bg-[#BD9FA9] px-4 py-1 font-bold text-[#FFFFFF]  ">
         {title}
       </div>
     </div>

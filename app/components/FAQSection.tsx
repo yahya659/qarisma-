@@ -15,7 +15,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <section className="relative min-h-screen  bg-[#BD9FA973]/40 w-full flex flex-col items-center justify-center py-20 px-4 overflow-hidden">
+    <section className="relative min-h-screen  bg-[#BD9FA973] w-full flex flex-col items-center justify-center py-20 px-4 overflow-hidden">
       
       {/* 1. الخلفية - صورة الـ Sketch */}
       <div className="absolute inset-0 -z-10 bg-[#BD9FA973]/40">

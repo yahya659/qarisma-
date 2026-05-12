@@ -37,8 +37,7 @@ export default function CategoriesPage() {
         </h1>
 
         <p className="text-2xl md:text-[32px] font-bold text-black max-w-5xl mx-auto leading-tight">
-          Don't worry! Just enter your email address below, and we'll send you a link to reset your password.
-        </p>
+Don't worry! Just enter your email address below, and we'll send you a link to reset your password.        </p>
       </div>
 
       {/* الأزرار */}

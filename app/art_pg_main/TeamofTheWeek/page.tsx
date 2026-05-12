@@ -13,7 +13,9 @@ const ArtVibeFullPage = () => {
       {" "}
       <div className="min-h-screen bg-[#D8CCFA] font-sans text-slate-900 selection:bg-indigo-200">
         {/* --- 1. الهيدر والقائمة العلويّة --- */}
+        
         <header className="max-w-7xl mx-auto p-6 md:p-10">
+          
           <h1 className="text-6xl font-black text-[#4F46E5] mb-2 tracking-tighter">
             Latest stories
           </h1>

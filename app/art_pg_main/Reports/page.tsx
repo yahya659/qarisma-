@@ -19,7 +19,7 @@ const ArtVibePortal = () => {
           className="w-full h-full object-cover" 
           alt="background"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#C4B5FD]/60 to-[#D8CCFA]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#BD9FA9]/60 to-[#D8CCFA]/50" />
       </div>
 
       <div className="relative z-10 p-4 md:p-10 max-w-7xl mx-auto">
@@ -75,8 +75,8 @@ const ArtVibePortal = () => {
         {/* 4. قسم الاستكشاف (Explore More About Art) */}
         <section className="mb-20">
           <div className="text-center mb-12">
-            <h2 className="text-5xl font-black text-white mb-2">Explore More About Art</h2>
-            <p className="text-xl font-bold text-black">Top show and In-depth across the world</p>
+            <h2 className="text-[64px] font-black text-white mb-2">Explore More About Art</h2>
+            <p className="text-[40px] font-bold text-black">Top show and In-depth across the world</p>
           </div>
 
            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
@@ -170,12 +170,14 @@ const ArtVibePortal = () => {
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M9 18l6-6-6-6"/></svg>
           </button>
         </footer>
-        <Footer/>
+   
 
       </div>
       
     </div>
-    
+        <div className="relative z-20 bg-white/95  backdrop-blur-md rounded-t-3xl mt-10">
+  <Footer />
+</div>
     </>
   );
 };

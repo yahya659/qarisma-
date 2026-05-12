@@ -13,7 +13,7 @@ const TalentsPage = () => {
       <br />
       <div className="min-h-screen font-sans bg-gradient-to-b from-[#5D5FEF7D] to-[#5D5FEF7D] pb-20">
         {/* HERO */}
-        <section className="relative h-[600px] overflow-hidden">
+        <section className="relative h-[100vh] overflow-hidden">
           {/* Background Image */}
           <img
             src="/images/talents.jpg"
@@ -58,16 +58,17 @@ const TalentsPage = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-purple-300/60 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-purple-300/60  "></div>
 
           {/* CONTENT */}
           <div className="relative z-10">
-            <h2 className="text-6xl font-black text-indigo-700 mb-4">
-              Top Talents
+            <h2 className="text-[48px] font-black text-[#F178B6] mb-4">
+              Recent Exploration & Perspectives
             </h2>
 
-            <p className="text-lg text-gray-900 mb-16">
-              Top Events and In-depth across the world
+            <p className="text-[25px] text-[#FFFFFF] mb-16">
+              It has one principle and one motto that can be read individually,
+              meaning each word on its own, or as a whole
             </p>
 
             <div className="flex items-center justify-center gap-6">
@@ -76,44 +77,43 @@ const TalentsPage = () => {
               </button>
 
               <div className="flex items-end gap-6 relative">
-                <div className="bg-white/70 backdrop-blur rounded-2xl p-3 w-44">
+                <div className="bg-[#5D5FEFA1] backdrop-blur rounded-2xl p-3 w-44">
                   <img
                     src="/images/artival2.jpg"
                     className="h-28 w-full object-cover rounded-xl mb-2"
                   />
-                  <h4 className="text-sm font-bold text-left">Artists</h4>
-                  <p className="text-[10px] text-left">
-                    It has one principle...
-                  </p>
+                  <h4 className="text-[30px] font-bold text-left">
+                    Digital Art{" "}
+                  </h4>
+                  <button className="text-[20px] text-left bg-[#FFFFFF]">
+                    Explore more
+                  </button>
                 </div>
 
-                <div className="bg-white rounded-3xl w-80 shadow-2xl scale-110 z-20 overflow-hidden border-4 border-white">
+                <div className="bg-[#F178B68F]  w-80 shadow-2xl scale-110 z-20 overflow-hidden   ">
                   <img
                     src="/images/artival1.png"
                     className="h-52 w-full object-cover"
                   />
                   <div className="p-5 text-left">
-                    <h3 className="text-2xl font-bold text-gray-800">
+                    <h3 className="text-[48px] font-bold text-gray-800">
                       Gallery
                     </h3>
-                    <p className="text-sm text-gray-600 mt-2">
-                      It has one principle...
-                    </p>
-                    <p className="text-xs text-indigo-500 font-bold mt-2">
-                      (Elegance, Personality, Strength)
-                    </p>
+                    <button className="text-[20px] text-[#F178B6] text-left bg-[#FFFFFF]">
+                      Explore more
+                    </button>
                   </div>
                 </div>
 
-                <div className="bg-white/70 backdrop-blur rounded-2xl p-3 w-44">
+                <div className="bg-[#5D5FEFA1] backdrop-blur rounded-2xl p-3 w-44">
                   <img
                     src="/images/artival2.jpg"
                     className="h-28 w-full object-cover rounded-xl mb-2"
                   />
-                  <h4 className="text-sm font-bold text-left">Artists</h4>
-                  <p className="text-[10px] text-left">
-                    It has one principle...
-                  </p>
+                  <h4 className="text-[30px] font-bold text-left">Fine Arts</h4>
+                  <button className="text-[20px] text-[#F178B6] text-left bg-[#FFFFFF]">
+                    Explore more
+                  </button>
                 </div>
               </div>
 
@@ -141,30 +141,29 @@ const TalentsPage = () => {
           />
 
           {/* Overlay */}
-          <div className="absolute inset-0 bg-purple-300/60 backdrop-blur-sm"></div>
+          <div className="absolute inset-0 bg-purple-300/60  "></div>
 
           {/* CONTENT */}
           <div className="relative z-10 flex flex-col md:flex-row items-center gap-16 w-full">
             <div className="w-full md:w-2/5">
               <img
-                src="/images/talntes3.jpg"
+                src="/images/Read_fullstory.png"
                 className="rounded-3xl shadow-2xl"
               />
             </div>
 
             <div className="w-full md:w-3/5 text-left">
-              <h2 className="text-5xl font-black text-indigo-700 mb-6">
-                Explore more
+              <h2 className="text-[48px] font-black text-[#FFFFFF] mb-6">
+                The Language of Light and Abstract scenes
               </h2>
 
-              <p className="mt-6 font-bold text-xl">
+              <p className="mt-6 font-bold text-[32px]">
                 It has one principle and one motto that can be read
-                individually, meaning each word on its own, or as a whole, in a
-                single sentence, whether from right to left or left to right:
+                individually, meaning each
               </p>
 
-              <p className="mt-4 font-bold text-xl">
-                (Elegance, Personality, Strength)
+              <p className="mt-4 font-bold text-[#FFFFFF] text-[32px]">
+                 Read fullstory
               </p>
             </div>
           </div>
@@ -175,7 +174,7 @@ const TalentsPage = () => {
           <div className="bg-[#8e7cf5] rounded-2xl p-5 flex justify-between items-center text-white shadow-xl">
             <p>stay informed, share your talent with us & contact us</p>
 
-            <button className="bg-indigo-600 px-6 py-2 rounded-lg font-bold">
+            <button className="bg-[#F178B6] px-6 py-2 rounded-lg font-bold">
               send message
             </button>
           </div>
