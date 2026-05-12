@@ -28,14 +28,14 @@
 
 ## 🖼️ صور المشروع
 
-![Home Page](/images/image_project/face.png)
+![Home Page](/public/images/image_project/face.png)
 
 
-![Category Page](/images/image_project/ccc.png)
+![Category Page](/public/images/image_project/ccc.png)
 
 
-![Article Page](/images/image_project/ccc.png)
-![Article Page](/images/image_project/face2.png)
+![Article Page](/public/images/image_project/sinnn.png)
+![Article Page](/public/images/image_project/face2.png)
 
 > يمكنك استبدال هذه الصور باللقطات الفعلية لموقعك في مجلد `public/screenshots/`.
 
