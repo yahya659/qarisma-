@@ -1,5 +1,5 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -23,12 +23,27 @@ export default function HeroSection() {
       {/* 🎯 Glass Card */}
       <div className="relative z-10 w-full max-w-2xl px-10 py-16 rounded-3xl overflow-hidden ">
         {/* 🦋 Butterfly Background (Soft) */}
-        <Image
-          src="/images/launch_page/launch_page2.png"
-          alt="butterflies"
-          fill
-          className="object-cover opacity-20 shadow-[6px_8px_4px_0px_#5D5FEF]"
-        />
+      <motion.div
+  className="absolute inset-0"
+  animate={{
+    x: [0, 25, -25, 0],
+    y: [0, -20, 20, 0],
+    rotate: [0, 2, -2, 0],
+    scale: [1, 1.05, 1],
+  }}
+  transition={{
+    duration: 10,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <Image
+    src="/images/launch_page/launch_page2.png"
+    alt="butterflies"
+    fill
+    className="object-cover opacity-20 shadow-[6px_8px_4px_0px_#5D5FEF]"
+  />
+</motion.div>
 
         {/* 🌫 Card Overlay */}
 

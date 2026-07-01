@@ -1,18 +1,19 @@
 "use client";
 
-import React, { useState } from "react";
-
-/**
- * تم استبدال مكونات Next.js بمكونات React القياسية
- * لضمان عمل المعاينة بسلاسة في البيئة الحالية.
- */
+import React, { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function App() {
-  // محاكاة للتنقل بدلاً من useRouter
-  const handleSignUp = () => {
-    console.log("Redirecting to signup...");
-  };
+  const router = useRouter();
+  const [showMusic, setShowMusic] = useState(false);
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowMusic(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="min-h-screen bg-[#1a1625] bg-cover bg-center flex flex-col items-center p-8 text-white relative overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-40 pointer-events-none">
@@ -23,14 +24,26 @@ export default function App() {
         />
       </div>
 
-      {/* --- الفراشات الجانبية */}
-      <div className="absolute top-0 right-0 z-20 pointer-events-none w-48 h-64 md:w-80 md:h-96">
-        <img
-          src="/images/launch_page/launch_page2.png"
-          alt="Decorative Butterflies"
-          className="w-full h-full object-contain opacity-50  "
-        />
-        {/* عنصر بصري احتياطي في حال لم يتم تحميل الصورة */}
+      {/* --- الفراشات الجانبية متحركة */}
+      {/* --- الفراشات ثم تتحول إلى آلات موسيقية */}
+      <div
+        className="absolute top-0 right-0 z-20 pointer-events-none w-48 h-64 md:w-80 md:h-96"
+        style={{ animation: "floatButterfly 4s ease-in-out infinite" }}
+      >
+        {!showMusic ? (
+          <img
+            src="/images/launch_page/launch_page2.png"
+            alt="Butterflies"
+            className="w-full h-full object-contain opacity-60 transition-all duration-1000"
+          />
+        ) : (
+          <img
+            src="/images/music.png"
+            alt="Music Instruments"
+            className="w-full h-full object-contain opacity-80 animate-pulse transition-all duration-1000"
+          />
+        )}
+
         <div className="absolute top-10 right-10 w-24 h-24 bg-pink-500/20 blur-3xl rounded-full"></div>
       </div>
 
@@ -55,7 +68,7 @@ export default function App() {
         {/* الحاوية الرئيسية للبطاقات */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
           {/* البطاقة الأولى: NEWS */}
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl flex flex-col items-center transition-transform hover:scale-105">
+          <div className="bg-gradient-to-b from-[#4a3427] to-[#241812]   rounded-3xl p-6 shadow-2xl flex flex-col items-center transition-all duration-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]">
             <div className="w-full aspect-video relative rounded-2xl overflow-hidden mb-6 bg-gray-700">
               <img
                 src="/images/news.jpg"
@@ -64,7 +77,6 @@ export default function App() {
               />
             </div>
             <a href="/News">
-              {" "}
               <h2 className="text-2xl font-bold tracking-widest border-b-2 border-white/30 pb-1 px-4 cursor-pointer">
                 NEWS
               </h2>
@@ -72,9 +84,8 @@ export default function App() {
           </div>
 
           {/* البطاقة الثانية: Home */}
-          <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl flex flex-col items-center ring-1 ring-white/30 transition-transform hover:scale-105 scale-105 z-10">
-            <div className="w-full aspect-video relative rounded-2xl overflow-hidden mb-6 bg-gray-700">
-              <img
+          <div className="bg-gradient-to-b from-[#4a3427] to-[#241812]   rounded-3xl p-6 shadow-2xl flex flex-col items-center transition-all duration-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]">
+<div className="w-full aspect-video relative rounded-2xl overflow-hidden mb-6 bg-gray-700">              <img
                 src="/images/home.jpg"
                 alt="Home"
                 className="w-full h-full object-cover"
@@ -88,7 +99,7 @@ export default function App() {
           </div>
 
           {/* البطاقة الثالثة: Categories */}
-          <div className="bg-white/10  backdrop-blur-md border border-white/20 rounded-3xl p-6 shadow-2xl flex flex-col items-center transition-transform hover:scale-105">
+          <div className="bg-gradient-to-b from-[#4a3427] to-[#241812]   rounded-3xl p-6 shadow-2xl flex flex-col items-center transition-all duration-500 hover:scale-110 hover:shadow-[0_0_40px_rgba(255,215,0,0.7)]">
             <div className="w-full aspect-video relative rounded-2xl overflow-hidden mb-6 bg-gray-700">
               <img
                 src="/images/categories.jpg"
@@ -106,17 +117,37 @@ export default function App() {
 
         {/* Sign */}
         <div className="mt-16 text-center">
-          <a href="CreateAccount"><p className="text-gray-400 mb-2">Don't have an account?</p></a>
-          
-          <a href="/sign_in"><button
-            className="text-pink-400 font-bold text-lg hover:text-pink-300 transition-all active:scale-95"
-            onClick={handleSignUp}
-          >
-            Sign Up Now
-          </button></a>
-          
+          <a href="CreateAccount">
+            <p className="text-gray-400 mb-2">Don't have an account?</p>
+          </a>
+          <a href="/sign_in">
+            <button className="text-pink-400 font-bold text-lg hover:text-pink-300 transition-all active:scale-95">
+              Sign Up Now
+            </button>
+          </a>
         </div>
       </div>
+
+      {/* CSS الأنيميشن */}
+      <style jsx>{`
+        @keyframes floatButterfly {
+          0% {
+            transform: translateY(0px) rotate(-3deg);
+          }
+          25% {
+            transform: translateY(-18px) rotate(3deg);
+          }
+          50% {
+            transform: translateY(-8px) rotate(-2deg);
+          }
+          75% {
+            transform: translateY(-22px) rotate(4deg);
+          }
+          100% {
+            transform: translateY(0px) rotate(-3deg);
+          }
+        }
+      `}</style>
     </div>
   );
 }

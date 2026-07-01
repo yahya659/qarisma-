@@ -1,12 +1,16 @@
 "use client";
-
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import CurtainScene from "../components/scenes/CurtainScene";
 
 export default function GetStartedPage() {
   const router = useRouter();
 
   return (
+    <>
+      
+    <CurtainScene/>
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-700">
 
       {/* 🔮 Page Background */}
@@ -25,12 +29,26 @@ export default function GetStartedPage() {
       <div className="relative z-10 w-full max-w-2xl px-10 py-16 rounded-3xl overflow-hidden ">
 
         {/* 🦋 Butterfly Background (Soft) */}
-        <Image
-                src="/images/launch_page/launch_page2.png"
-                alt="butterflies"
-                fill
-                className="object-cover opacity-20 shadow-[6px_8px_4px_0px_#5D5FEF]"
-              />
+        <motion.div
+  className="absolute inset-0"
+  animate={{
+    x: [0, 15, -15, 0],
+    y: [0, -10, 10, 0],
+    rotate: [0, 1, -1, 0],
+  }}
+  transition={{
+    duration: 8,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  <Image
+    src="/images/launch_page/launch_page2.png"
+    alt="butterflies"
+    fill
+    className="object-cover opacity-20 shadow-[6px_8px_4px_0px_#5D5FEF]"
+  />
+</motion.div>
 
         {/* 🌫 Card Overlay */}
 
@@ -59,7 +77,7 @@ export default function GetStartedPage() {
 
             {/* Get Started */}
             <button
-              onClick={() => router.push("/Getstartednow")}
+              onClick={() => router.push("/onboarding_host_pages")}
               className="
                 w-50
                 h-12
@@ -99,5 +117,7 @@ export default function GetStartedPage() {
         </div>
       </div>
     </div>
+  
+    </>
   );
 }

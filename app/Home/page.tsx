@@ -5,6 +5,7 @@ import ExplorePage from '../components/ExplorePage';
 import FAQSection from '../components/FAQSection';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+// import Header from '@/components/Header';
 import HeroSection from '../components/HeroSection'
 import LatestNews from '../components/LatestNews';
 import MarriagePlatform from '../components/MarriagePlatform';
@@ -15,7 +16,7 @@ export default function Home () {
     
      
      <>
-     <Header/>
+    <Header/>
      <HeroSection />
      <ExplorePage/>
      <LatestNews/>
